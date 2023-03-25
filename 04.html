@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: #dedede;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .modal {
+        position: relative;
+        padding-inline: 1rem;
+        padding-block: 2rem;
+        border-radius: 1rem;
+        background-color: white;
+        width: min(100%, 400px);
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .modal input {
+        min-height: 40px;
+        border-radius: 0.5rem;
+        border: 1px solid blue;
+        text-indent: 10px;
+      }
+
+      .modal button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        min-height: 40px;
+      }
+
+      .modal h2 {
+        text-align: center;
+      }
+
+      .modal .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* html[dir="rtl"] .modal .close {
+        right: initial;
+        left: 10px;
+      } */
+
+      .icon {
+        width: 2rem;
+      }
+
+      /* html[dir="rtl"] .icon {
+        transform: scale(-1);
+      } */
+
+      ion-icon {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="modal">
+      <button class="close">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </button>
+      <h2>Login to your account</h2>
+      <input type="text" placeholder="Enter your name" />
+      <input type="password" placeholder="Enter your password" />
+      <button type="submit">
+        Submit
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="48"
+            d="M268 112l144 144-144 144M392 256H100"
+          />
+        </svg>
+      </button>
+    </form>
+  </body>
+</html>

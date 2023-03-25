@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: sans-serif;
+      }
+
+      .menu {
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        --radius: 20px;
+
+        border-top-left-radius: var(--radius);
+        border-bottom-left-radius: var(--radius);
+
+        /* border-start-start-radius: var(--radius);
+        border-end-start-radius: var(--radius); */
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 2rem;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+      }
+
+      .avatar-wrapper {
+        border-radius: inherit;
+        background-color: blueviolet;
+        padding: 1rem;
+      }
+
+      .avatar {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .avatar img {
+        object-fit: cover;
+        width: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="avatar-wrapper">
+        <div class="avatar">
+          <img
+            src="https://randomuser.me/api/portraits/women/79.jpg"
+            alt="avatar"
+          />
+        </div>
+      </div>
+      <nav>
+        <a href="#">
+          <ion-icon name="home-outline"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="heart"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="save-outline"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+        </a>
+      </nav>
+    </div>
+    <!-- https://randomuser.me/api/portraits/women/79.jpg -->
+  </body>
+</html>
